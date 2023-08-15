@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header, main, footer {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+blockquote {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+button {
+    background-color: #3366cc;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1f4f99;
+}
+
+footer {
+    text-align: center;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Random Quote Generator</h1>
+    </header>
+    <main>
+        <div id="quote-container">
+            <blockquote id="quote">Click the button to generate a quote</blockquote>
+        </div>
+        <button id="generate-button">Generate Quote</button>
+    </main>
+    <footer>
+        &copy; 2023 Quote Generator
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html
