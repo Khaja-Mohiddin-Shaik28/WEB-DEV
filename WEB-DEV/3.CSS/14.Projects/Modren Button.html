@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+        }
+        .button{
+            width: 150px;
+            height: 50px;
+            border: 1px solid black;
+            background-color: bisque;
+            position: relative;
+            box-shadow: 1px 1px 2px black;
+        }
+        .button:hover .bAnimation{
+            width: 0px;
+            height: 50px;
+            animation:slide 1s  linear forwards;
+            position: absolute;
+            bottom: 0px;
+        }
+        .bAnimation p{
+            position: fixed;
+            left:800px;
+            text-align: center;
+        }
+        @keyframes slide {
+            100%{
+                width: 150px;
+                background-color: red;
+                color: white;
+            } 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="button">
+        <div class="bAnimation">
+            <p>Hire Me</p>
+        </div>
+        </div>
+    </div>
+</body>
+</html>

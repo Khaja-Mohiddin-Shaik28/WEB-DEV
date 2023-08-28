@@ -1,0 +1,58 @@
+*{
+    margin:0;
+    padding: 0;
+}
+.container{
+    max-width: 100vw;
+    height: 100%;
+}
+.container h1{
+    text-align: center;
+    font-size: 50px;
+}
+.images{
+    width: 1300px;
+    min-height: 100%;
+    margin: 0 auto;
+    display: flex;
+    background-color:rgb(255, 254, 254);
+    border-radius: 10px;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    overflow: hidden;
+}
+.card{
+    width: 400px;
+    height: 400px;
+    margin-bottom: 5px;
+    margin-top: 35px;
+    position: relative;
+}
+.card img{
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    filter: grayscale(100%);
+}
+
+.card img:hover{
+    transform: scale(1.1);
+    transition: 1s;
+    filter: drop-shadow(0 0 10px #333);
+}
+
+.card figcaption{
+position: absolute;
+top: 60%;
+bottom: 0;
+left: 10%;
+opacity: 0;
+}
+
+.card:hover figcaption{
+    transition: 1s;
+    transform: scale(1.4);
+    opacity: 1;
+    color:white;
+}
+
