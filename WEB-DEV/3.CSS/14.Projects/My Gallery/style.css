@@ -1,58 +1,51 @@
 *{
-    margin:0;
+    margin: 0;
     padding: 0;
 }
 .container{
-    max-width: 100vw;
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid  black;
+    width: 100%;
     height: 100%;
 }
-.container h1{
-    text-align: center;
-    font-size: 50px;
-}
+
 .images{
-    width: 1300px;
-    min-height: 100%;
+    width: 1000px;
+    min-height: 650px;
     margin: 0 auto;
     display: flex;
-    background-color:rgb(255, 254, 254);
-    border-radius: 10px;
     flex-wrap: wrap;
-    justify-content:space-evenly;
-    overflow: hidden;
+    margin-top: 20px;
 }
 .card{
-    width: 400px;
-    height: 400px;
-    margin-bottom: 5px;
-    margin-top: 35px;
+    width: 300px;
+    height: 200px;
+    margin-top: 10px;
+    margin-bottom: 20px;
     position: relative;
 }
 .card img{
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     border-radius: 20px;
+    transition: 1s;
     filter: grayscale(100%);
+}
+figcaption{
+    position: absolute;
+    bottom: 20px;
+    left: 70px;
+    opacity: 0;
+    transition: 1s;
 }
 
 .card img:hover{
-    transform: scale(1.1);
-    transition: 1s;
-    filter: drop-shadow(0 0 10px #333);
+    transform: scale(1.2);
+    filter : drop-shadow(0 0 10px black);
 }
-
-.card figcaption{
-position: absolute;
-top: 60%;
-bottom: 0;
-left: 10%;
-opacity: 0;
-}
-
 .card:hover figcaption{
-    transition: 1s;
-    transform: scale(1.4);
+    transform: translateY(-10px);
     opacity: 1;
     color:white;
 }
-
