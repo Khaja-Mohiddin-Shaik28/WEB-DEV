@@ -1,0 +1,6 @@
+#image:hover{
+    transform: rotate(-0.25turn);
+}
+#image{
+    transition: 0.5s;
+}

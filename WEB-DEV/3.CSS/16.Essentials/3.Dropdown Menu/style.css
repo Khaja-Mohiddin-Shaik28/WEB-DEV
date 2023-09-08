@@ -1,0 +1,31 @@
+.dropdown{
+    display: inline-block;
+    position: relative;
+}
+.dropdownicon{
+    width: 2rem;
+    height: 2rem;
+}
+.dropdownicon:hover{
+    transform: rotate(-0.25turn);
+}
+.dropdowncon{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    z-index: 1;
+    width: 7rem;
+}
+.dropdowncon a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    font-size: 1.5rem;
+
+}
+.dropdown:hover .dropdowncon{
+    display: block;
+}
+.dropdowncon a:hover{
+    background-color:aliceblue;
+}
