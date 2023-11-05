@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 0.2fr 1fr;
+    grid-template-areas: "topPart"
+                            "downPart";
+                           
+    justify-content: center;
+    align-items: center;
+    margin: 0 5rem;
+}
+.topPart{
+    grid-area: topPart;
+    text-align: center;
+}
+.downPart{
+    grid-area: downPart;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+}
+.box{
+    width:18rem;
+    height: 22rem;
+    border: 1px solid black;
+    border-radius: 0.7rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    position: relative;
+}
+.box .blockPart{
+    border-radius: 0.7rem;
+    height: 70%;
+    width: 100%;
+    background-image: url("Robot.jpg");
+    background-size:18rem 10rem;
+    background-repeat: no-repeat;
+    margin-bottom: 1.3rem;
+}
+.box .blockPart h3{
+    position: absolute;
+    bottom :  10rem;
+    left: 4rem;
+}
+.box .blockPart p{
+    position: absolute;
+    top : 12rem;
+    text-align: center;
+    color: grey;
+}
+.box .flexPart{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.box .flexPart img{
+    width: 2rem;
+    height: 2rem;
+}
+
+.box .flexPart #Category{
+    border: 1px solid black;
+    border-radius: 0.7rem;
+    height: 100%;
+    width: 6rem;
+    padding: 0.5rem;
+    color: grey;
+}
