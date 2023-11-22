@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 0.35fr 1fr;
+  background-color: rgba(0, 0, 0, 0.881);
+  grid-template-areas:
+    "heading"
+    "gameBox";
+  }
+  .heading {
+    grid-area: heading;
+    width: 90%;
+    height: 55%;
+    margin: 1rem auto;
+    background-color: yellow;
+    border-radius: 2rem;
+    font-weight: bold;
+  }
+.heading h1 {
+  padding-top: 1.5rem;
+  color: blue;
+  text-align: center;
+  font-size: 3rem;
+}
+.gameBox {
+  grid-area: gameBox;
+  justify-self: center;
+  align-self: center;
+  border: 0.2rem outset #f1f1f1;
+  height: 50%;
+  width: 50%;
+  background-color: rgba(0, 0, 0, 0.722);
+  line-height: 3rem;
+  font-family: 'Heebo', sans-serif;
+}
+.gameBox .choices {
+  padding-left: 25%;
+  padding-top: 5%;
+  font-size: 1.7rem;
+}
+.gameBox .choices #submit {
+  font-size: 1.3rem;
+  color: black;
+  padding: 0.15rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+.gameBox .choices #cpuChoice{
+  color:aqua;
+  font-weight: bold;
+}
+.gameBox .choices #result{
+  font-weight: bold;
+}

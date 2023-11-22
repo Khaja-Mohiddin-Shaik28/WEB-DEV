@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+    <div class="container">
+    <form >
+        <label for="number1">Enter A value:</label>
+        <input type="text" name="number1" placeholder="0"  id="A">
+        <br/> <br/>
+
+        <label for="number2">Enter B value:</label>
+        <input type="text" name="number2" placeholder="0" id="B">
+        <br/> <br/>
+
+        <label for="result">Result:</label>
+        <input type="text" name="result" placeholder="0" id="res">
+        <br/> <br/>
+
+        <input type="button" onclick="arithmetic('add')" value="Add">
+        <input type="button" onclick="arithmetic('sub')" value="Sub">
+        <input type="button" onclick="arithmetic('mul')" value="Mul">
+        <input type="button" onclick="arithmetic('div')" value="Div">
+
+        <input type="button" onclick="arithmetic()" value="Reset">
+    </form>
+</div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

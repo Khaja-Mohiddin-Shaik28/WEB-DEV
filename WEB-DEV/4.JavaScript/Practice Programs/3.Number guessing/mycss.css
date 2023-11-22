@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box;
+    background-color:#000;
+
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: grid; 
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-areas: 
+    "head head head"
+    "outsideBorder outsideBorder outsideBorder"
+    "myPara myPara myPara" ;
+    gap:10px;
+}
+#head{
+    position: absolute;
+    top:10px;
+    grid-area: head;
+    border: 2px solid #543838;
+    background-color: blue;
+    border-radius: 20px;
+    text-align:center;
+    height: 100px;
+    width: 99%;
+    padding: 10px;
+}
+#head h1{
+    background-color: blue;
+    color: white;
+}
+
+#outsideBorder{
+    grid-area: outsideBorder;
+    border: 3px solid red;
+    border-radius:10px ;
+    text-align: center;
+    width:680px;
+    height: 300px;
+    background-color: azure;
+    margin-left: 370px;
+    margin-top: 30px;
+    padding: 40px;
+}
+#insideBorder{
+    color: black;
+    width: 600px;
+    font-size: 30px;
+    align-self: center;
+    text-align: center;
+    padding: 22px;
+    border:4px outset black;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    
+    
+}
+#insideBorder p,label{
+    background-color: #f1f1f1;
+}
+input{
+    border: 2px solid black;
+    background-color: #f1f1f1;
+    color: black;
+    font-size: 22px;
+}
+.container button{
+    padding: 5px;
+    font-size: 20px;
+    color: black;
+    margin-top: 15px;
+    border:2px outset black;
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+#myPara{
+    grid-area: myPara;
+    color:  red;
+    text-align: center;
+}

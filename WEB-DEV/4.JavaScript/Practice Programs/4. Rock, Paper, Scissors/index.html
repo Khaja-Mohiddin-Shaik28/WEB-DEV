@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Heebo&display=swap" rel="stylesheet">
+    <title>RPS</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="heading">
+            <h1>Rock, Paper, Scissors Game</h1>
+        </div>
+        <div class="gameBox">
+            <div class="choices">
+                <p>Select your choice:</p>
+                <label for="rock">Rock</label>
+                <input type="radio" value="rock" name="choice" id="rock">
+                &nbsp;
+                <label for="paper">Paper</label>
+                <input type="radio" value="paper" name="choice" id="paper">
+                &nbsp;
+                <label for="scissors">Scissors</label>
+                <input type="radio" value="scissors" name="choice" id="scissors">
+                &nbsp;
+                <input type="submit" value="Submit" id="submit" onclick="game()">
+                <p>CPU Choice:
+                <span id="cpuChoice"></span>
+                </p>
+                <p id="result"></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
