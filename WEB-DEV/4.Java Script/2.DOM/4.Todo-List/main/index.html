@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do List</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat&family=Merriweather&family=Nunito&family=Poppins&family=Roboto:ital@1&family=Rubik+Wet+Paint&family=Rubik:ital@1&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Heading of the page -->
+        <div class="heading">
+            <h1>TODO-LIST</h1>
+        </div>
+        <!-- Adding pending and completed tasks -->
+        <div class="tasks">
+            <!-- pending tasks here -->
+            <div class="tasksBox" id="pendingTasks">
+                <div class="taskHeadings">
+                    <p>Pending Tasks</p>
+                </div>
+                <ul id="pendingTasksList"></ul>
+            </div>
+            <!-- completed tasks here -->
+            <div class="tasksBox" id="completedTasks">
+                <div class="taskHeadings">
+                    <p>Completed Tasks</p>
+                </div>
+                <ul>
+                </ul>
+            </div>
+        </div>
+        <div class="tasksInput">
+            <input type="text" name="tasks" placeholder="Enter new task here...." id="taskInput">
+            <div id="submit">
+                <i class="fa-solid fa-arrow-right fa-bounce fa-2xl"></i>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

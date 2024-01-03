@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    padding: 3em;
+}
+.container{
+    width: auto;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "mainImage"
+                        "images";
+    justify-content: center;
+    border: 0.2em solid black;
+}
+
+.mainImage{
+    grid-area: mainImage;
+        justify-self: center;
+        align-self: center;
+}
+.mainImage img{
+    width: 40em;
+    height: 20em;
+    cursor: pointer;
+}
+
+.images{
+    grid-area: images;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.image{
+    padding: 1em;
+}
+.image img{
+    width: 20em;
+    height: 10em;
+    margin: 1em;
+    border: 0.2em solid black;
+    cursor: pointer;
+}
+.image img:hover{
+    transition: 0.5s;
+    transform: scale(1.3);
+}
+
+

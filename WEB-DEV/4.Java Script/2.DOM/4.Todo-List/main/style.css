@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background:linear-gradient(to right,rgba(246, 189, 84, 0.894),orange);
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 1fr 0.2fr;
+    grid-template-areas: "heading"
+                         "tasks"
+                         "tasksInput";
+    font-family: "Nunito", sans-serif;
+}
+
+.heading{
+    grid-area: heading;
+    text-align: center;
+    color :white;
+    padding: 0.5em;
+}
+.tasks{
+    grid-area: tasks;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+}
+.tasks .tasksBox{
+    border: 0.1em solid black;
+    background-color :azure;
+    height: 21em;
+    width: 20em;
+    overflow: auto;
+    margin-bottom: 0.3em;
+    border-radius: 1em;
+    color: black;
+    /* padding: 1em; */
+    font-size: 1.6em;
+    line-height: 1.5em;
+    box-shadow: -0.3em -0.3em red;
+}
+
+.tasks .tasksBox ul{
+    list-style: none;
+    padding-left: 1em;
+    padding-right: 2em;
+}
+.taskHeadings{
+    background-color:aqua;
+    text-align: center;
+    padding: 0.3em;
+    border-radius: 0.2em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    font-size: 1.1em;
+}
+.tasksInput{
+    grid-area: tasksInput;
+    padding-top: 1em;
+    text-align: center;
+    position: relative;
+}
+.tasksInput #taskInput{
+    width: 80%;
+    height: 3em;
+    border-radius: 2em;
+    padding: 1.2em;
+    font-size: 1.2em;
+}
+.tasksInput #submit{
+    width: 5em;
+    height: 3em;
+    position: absolute;
+    top: 2.3em;
+    right: 10em;
+    cursor: pointer;
+}
+
+.liStyle:hover{
+    background-color: #dcd4d47f;
+    border-radius: 0.3em;
+    padding: 0.1em;
+    transform: scale(1.05);
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+
+.liStyle{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.3em;
+}
+.liStyle i{
+    margin-right: 0.1em;
+}
+
+.liStyle p{
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+    

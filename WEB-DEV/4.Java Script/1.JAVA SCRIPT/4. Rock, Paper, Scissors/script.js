@@ -26,8 +26,8 @@ function game() {
   if (userChoiceCheck) {
     let userChoiceValue = userChoiceCheck.value;
     if (userChoiceValue == "rock" && cpuChoiceValue == "Rock") {
-      document.getElementById("result").innerHTML = "Game Tied!!!";
       yellow();
+      document.getElementById("result").innerHTML = "Game Tied!!!";
     } else if (userChoiceValue == "rock" && cpuChoiceValue == "Paper") {
       red();
       document.getElementById("result").innerHTML = "You Lost!!!";

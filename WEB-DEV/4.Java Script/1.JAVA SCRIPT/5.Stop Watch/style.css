@@ -1,0 +1,38 @@
+body{
+    background-color: rgba(0, 0, 0, 0.885);
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+}
+.container .timerBox{
+    width: 40%;
+    height: 40%;
+    border: 0.2rem outset red;
+    background-color: black;
+}
+.container .timerBox .stopWatch{
+    margin-top: 10%;
+}
+.container .time{
+    display: flex;
+    justify-content: center;
+    
+    font-weight: bold;
+}
+.container .timerButtons{
+    display: flex;
+    justify-content: space-evenly;
+}
+.container .timerButtons *{
+    font-size: 2rem;
+    color: white;
+    border: 0.2rem outset whitesmoke;
+    background: linear-gradient(to right, red, blue);
+    font-weight: bold;
+}
