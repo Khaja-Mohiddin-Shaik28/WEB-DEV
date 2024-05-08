@@ -1,0 +1,45 @@
+/* Menu */
+.menu {
+  grid-area: menu;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.menu ul li {
+  height: 4.5rem;
+  list-style: none;
+  margin-bottom: 1.5rem;
+  border-radius: 0.7rem;
+}
+.menu ul li:hover {
+  background-color: var(--hover-color);
+}
+.menu a {
+  text-decoration: none;
+  color: black;
+  font-size: 0.9rem;
+}
+.menu #Home::before {
+  content: url("images/Home.png");
+  display: block;
+}
+.menu #Originals::before {
+  display: block;
+  content: url("images/originals.png");
+}
+.menu #subscriptions::before {
+  display: block;
+  content: url("images/subscriptions.png");
+}
+.menu #YoutubeMusic::before {
+  display: block;
+  content: url("images/youtube-music.png");
+}
+.menu #Library::before {
+  display: block;
+  content: url("images/library.png");
+}
+.menu #Explore::before {
+  display: block;
+  content: url("images/explore.png");
+}

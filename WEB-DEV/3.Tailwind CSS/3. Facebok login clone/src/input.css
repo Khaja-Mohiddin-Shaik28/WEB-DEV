@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities{
+    .inputStyle{
+        @apply  block w-10/12 border-solid border-l-gray-200 p-2 focus:outline-gray-200 rounded border-2 mb-3;
+    }
+}

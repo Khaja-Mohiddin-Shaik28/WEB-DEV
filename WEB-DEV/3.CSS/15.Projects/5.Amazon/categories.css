@@ -1,0 +1,27 @@
+
+.categories{
+    grid-area: categories;
+    background-color: rgba(0, 0, 0, 0.833);
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.left-category{
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+}
+.left-category a{
+    color:white;
+    text-decoration: none;
+}
+.right-category{
+    display: flex;
+    width: 20%;
+    justify-content: center;
+}
+.right-category a{
+    color:white;
+    text-decoration: none;
+}

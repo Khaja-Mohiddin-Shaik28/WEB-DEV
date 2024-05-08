@@ -1,0 +1,163 @@
+/* nav section */
+.nav #menu {
+  width: 3rem;
+  height: 2rem;
+}
+.nav {
+  grid-area: nav;
+  display: flex;
+  justify-content: space-between;
+  height: 4rem;
+}
+.nav .left-section {
+  font-size: 1.4rem;
+  width: 14%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.nav #logo {
+  width: 6rem;
+  height: 1.5rem;
+  cursor: var(--pointer);
+}
+.nav .middle-section {
+  display: flex;
+  width: 40%;
+  justify-content: center;
+}
+.middle-section #searchBar {
+  height: 2rem;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  width: 30rem;
+  padding: 1rem;
+  border: 0.1rem solid grey;
+  font-size: 1.2rem;
+}
+.middle-section #searchBar::placeholder {
+  font-size: 1.2rem;
+}
+.middle-section #searchIcon {
+  width: 3rem;
+  height: 2.2rem;
+  border: 0.1rem solid grey;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  background-color: var(--normal-color);
+  margin-right: 1rem;
+  background-image: url("images/search.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: var(--pointer);
+}
+.middle-section #searchIcon:hover {
+  background-color: var(--hover-color);
+}
+.middle-section .search-icon #searchIconId {
+  transform: translate(-4rem, 2.5rem);
+  padding: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.646);
+  border-radius: 0.4rem;
+  width: auto;
+  color: white;
+  display: none;
+  font-size: 0.8rem;
+}
+.search-icon {
+  position: relative;
+}
+.middle-section .search-icon:hover #searchIconId {
+  display: inline;
+  position: absolute;
+}
+.middle-section .voice #voiceSearch {
+  height: 1.8rem;
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 0.5rem;
+  background-color: var(--normal-color);
+  cursor: var(--pointer);
+  position: relative;
+}
+.middle-section .voice #voiceSearch:hover {
+  background-color: var(--hover-color);
+}
+.middle-section #profile {
+  border: 1px solid white;
+  border-radius: 50%;
+  cursor: var(--pointer);
+}
+.middle-section .voice #searchHover {
+  transform: translate(-4.5rem, 2.5rem);
+  padding: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.646);
+  border-radius: 0.4rem;
+  width: auto;
+  color: white;
+  display: none;
+  font-size: 0.8rem;
+}
+
+.middle-section .voice:hover #searchHover {
+  display: inline;
+  position: absolute;
+}
+.right-section {
+  display: flex;
+  width: 15%;
+  height: 2rem;
+  justify-content: space-evenly;
+}
+.left-section :first-child {
+  border: 1px solid white;
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+  padding: 0.2rem;
+}
+.left-section :first-child:hover {
+  background-color: var(--hover-color);
+}
+.right-section img {
+  border: 1px solid white;
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+  padding: 0.8rem;
+  cursor: var(--pointer);
+  position: relative;
+}
+.right-section img:hover {
+  background-color: var(--hover-color);
+}
+
+.right-section .create #createId {
+  transform: translate(-3rem, 3rem);
+  padding: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.646);
+  border-radius: 0.4rem;
+  width: auto;
+  color: white;
+  display: none;
+  font-size: 0.8rem;
+}
+
+.right-section .create:hover #createId {
+  display: inline;
+  position: absolute;
+}
+.right-section .notifications #notificationsId {
+  transform: translate(-4.5rem, 3rem);
+  padding: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.646);
+  border-radius: 0.4rem;
+  width: auto;
+  color: white;
+  display: none;
+  font-size: 0.8rem;
+}
+
+.right-section .notifications:hover #notificationsId {
+  display: inline;
+  position: absolute;
+}

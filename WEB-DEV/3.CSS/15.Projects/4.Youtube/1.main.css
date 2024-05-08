@@ -1,0 +1,25 @@
+* {
+  padding: 0;
+}
+html {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+:root {
+  --normal-color: #f1f1f1a5;
+  --hover-color: #f1f1f1;
+  --pointer: pointer;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 0.1fr 0.2fr 1fr;
+  grid-template-columns: 0.06fr 1fr;
+  grid-template-areas:
+    "nav nav"
+    "menu categories"
+    "menu content";
+
+  font-family: "Roboto", sans-serif;
+}

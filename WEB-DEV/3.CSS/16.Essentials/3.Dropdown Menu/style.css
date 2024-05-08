@@ -5,6 +5,7 @@
 .dropdownicon{
     width: 2rem;
     height: 2rem;
+    transition: 0.25s;
 }
 .dropdownicon:hover{
     transform: rotate(-0.25turn);

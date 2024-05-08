@@ -1,0 +1,29 @@
+.newuser{
+    grid-area: newuser;
+    width: 100%;
+    height: 100%;
+    border: 0.1rem solid white;
+    text-align: center;
+    padding: 3rem;
+    background-color: #f1f1f1;
+}
+.newuser  input[type="button"]{
+    width: 17rem;
+    height: 2rem;
+    border-radius: 2rem;
+    border-color: orange;
+    background-color: rgba(255, 166, 0, 0.77);
+    font-size: 1.1rem;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px black;
+}
+.newuser {
+    font-weight: 600;
+}
+.newuser #newacc{
+    font-size: 0.8rem;
+}
+.newuser #newacc a{
+    color:blue;
+    text-decoration: none;
+}

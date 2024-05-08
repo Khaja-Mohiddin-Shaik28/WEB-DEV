@@ -1,0 +1,24 @@
+.products{
+    grid-area: products;
+    display: flex;
+    flex-wrap: wrap; 
+    background-color: rgba(218, 237, 253, 0.62);
+}
+.cards{
+    background-color: white;
+    width: 20rem;
+    height: 25rem;
+    margin-left: 3rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    padding: 1rem;
+    font-family:sans-serif;
+}
+.cards img{
+    width:90%;
+     height:80%;
+}
+.cards a{
+    text-decoration: none;
+    color: blue;
+}

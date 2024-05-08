@@ -1,0 +1,38 @@
+/* Categories */
+.categories {
+  grid-area: categories;
+  display: flex;
+  justify-content: space-evenly;
+}
+.categories .recommendation-category {
+  padding: 0.5rem;
+  height: 1rem;
+  text-decoration: none;
+  color: black;
+  border-radius: 0.4rem;
+  background-color: var(--hover-color);
+}
+.categories .recommendation-category:hover {
+  background-color: #e0dbdb;
+}
+.categories img {
+  width: 1.5rem;
+  height: 2rem;
+  cursor: var(--pointer);
+}
+
+.categories .next #nextId {
+  transform: translate(-3rem, 2rem);
+  padding: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.646);
+  border-radius: 0.4rem;
+  width: auto;
+  color: white;
+  display: none;
+  font-size: 0.8rem;
+}
+
+.categories .next:hover #nextId {
+  display: inline;
+  position: absolute;
+}

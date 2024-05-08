@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+.container {
+  max-width: 100vw;
+  min-height: 100vh;
+  display: grid;
+  /* grid-template-rows: 6rem 3rem 18rem 1fr 0.0.5fr;   */
+  grid-template-rows: 0.125fr 0.07fr 0.5fr 1fr 0.2fr 0.8fr 0.4fr;
+  grid-template-areas:
+    "nav"
+    "categories"
+    "slidingImage"
+    "products"
+    "newuser"
+    "footer"
+    "copyright-and-more";
+  font-family: "Nunito", sans-serif;
+}

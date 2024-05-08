@@ -6,7 +6,7 @@ function timer() {
   timerId = setTimeout(function time() {
     seconds++;
     document.getElementById("seconds").innerHTML = seconds;
-    if (seconds > 5) {
+    if (seconds >11) {
       minutes++;
       document.getElementById("minutes").innerHTML = minutes;
       secondsReset();

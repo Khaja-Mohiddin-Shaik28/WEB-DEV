@@ -1,0 +1,28 @@
+/* Content */
+.content {
+  grid-area: content;
+  display: flex;
+  flex-wrap: wrap;
+}
+.video {
+  width: 27rem;
+  height: 20rem;
+  margin: 1.3rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+.video .thumbnail {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 77%;
+  margin: 0;
+  border-radius: 1.5rem;
+}
+.description {
+  display: flex;
+}
+.description .right-description-section p {
+  line-height: 0.2rem;
+  color: grey;
+}

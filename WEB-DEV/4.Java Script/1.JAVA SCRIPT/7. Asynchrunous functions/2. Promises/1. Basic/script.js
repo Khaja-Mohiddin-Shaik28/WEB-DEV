@@ -1,5 +1,5 @@
 let promise = new Promise( function ( resolve, reject ){
-    if( false ) resolve(1);
+    if( true ) resolve(1);
     else reject( 0 );
 } )
 
@@ -16,7 +16,7 @@ promise.then(
 } ) 
 
 
-
+// here second function is for catching error
 // let promise = new Promise(function (resolve, reject){
 //     if(true) resolve(1);
 //     else reject(0);

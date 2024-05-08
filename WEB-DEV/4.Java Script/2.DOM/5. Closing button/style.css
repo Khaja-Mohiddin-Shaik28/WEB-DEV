@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    overflow: hidden;
+    overflow-x: hidden;
 }
 .container{
     width: 100vw;
@@ -16,6 +16,7 @@ body{
     margin: 1em auto;
     width: 20em;
     padding: 1em;
+    
 }
 .button{
     background-color: antiquewhite;

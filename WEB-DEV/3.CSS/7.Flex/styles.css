@@ -19,7 +19,7 @@ body{
     height: 150px;
     background-color:red;
     /* flex-shrink: 4; */
-    /* flex-grow: 2; */
+    flex-grow: 3;
     /* order: 4; */
    /* order: 1; */
   }

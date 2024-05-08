@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 0.22fr 1fr;
+    grid-template-rows: 0.2fr 1fr 1fr;
+    grid-template-areas: "menu nav"
+                        "menu logo"
+                        "menu content";
+    color: white;
+}
+
+.nav{
+    grid-area: nav;
+    background-color: rgba(0, 0, 0, 0.936);
+}
+.chatGPT-text{
+    padding-left: 1rem;
+    padding-top: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.chatGPT-text h2:hover{
+    cursor: pointer;
+}
+
+.chatGPT-text *{
+    padding-right: 1px;
+}
+.logo{
+    grid-area: logo;
+    display: flex;
+    flex-direction: column;
+    padding-left: 25rem;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.936);
+}
+#logo{
+    background-color: white; 
+    padding: 4px; 
+    border-radius: 50%;
+    width: 50px;
+    margin-left: 6rem;
+    margin-bottom: 2rem;
+}
+
+.content{
+    grid-area: content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.936);
+}
+.cards{
+    display: flex;
+    width: 55rem;
+    flex-wrap: wrap;
+}
+.card{
+    width: 22rem;
+    height: 5rem;
+    border: 1px solid rgba(220, 220, 220, 0.531);
+    margin: 1rem;
+    border-radius: 0.7rem;
+    padding: 1rem;
+}
+.card:hover{
+    background-color: rgba(198, 187, 187, 0.472);
+    cursor: pointer;
+}
+.card p{
+    color: rgb(177, 168, 168);
+}
+
+#prompt-field{
+    width: 60%;
+    height: 3rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-size: 1rem;
+    color: rgb(177, 168, 168);
+    background-color: rgba(0, 0, 0, 0.936);
+    border: 1px solid rgba(220, 220, 220, 0.531);
+    margin-right: 6rem;
+}
+
+#up-arrow{
+    position: absolute;
+    left: 73%;
+    bottom: 12%;
+}
+
+#up-arrow:hover{
+    cursor: pointer;
+}
+
+.menu{
+    grid-area: menu;
+    background-color: black;
+    position: relative;
+    padding: 0.5rem;
+}
+.menu-logo{
+    display: flex;
+    align-items: center;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    padding: 0.5rem;
+}
+
+.menu-logo:hover{
+    background-color: rgba(198, 187, 187, 0.472);
+}
+
+#menu-logo-image{
+    background-color: white; 
+    padding: 4px; 
+    border-radius: 50%;
+    width: 30px;
+}
+
+.history{
+    margin-top: 1rem;    
+}
+.history p{
+
+    padding-left:0.7rem;
+    padding-right:1rem;
+    padding-top:1rem;
+    color: rgb(177, 168, 168);
+}
+
+.history h4{
+    padding:0.7rem;
+    border-radius: 0.5rem;
+}
+
+.history h4:hover{
+    background-color: rgba(198, 187, 187, 0.472);
+    cursor: pointer;
+}
+.settings{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 0.5rem;
+}
+.premium{
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;  
+}
+.premium:hover{
+    background-color: rgba(198, 187, 187, 0.472);
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+.profile:hover{
+    background-color: rgba(198, 187, 187, 0.472);
+    border-radius: 0.5rem;
+    cursor: pointer;    
+
+}
+.premium p{
+    color: rgb(177, 168, 168);
+    padding-left: 1.2rem;
+}
+.premium h4::before{
+    content: url("upgrade.svg");
+}
+.profile{
+    display: flex;
+    align-items: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+#profile-logo{
+    border-radius: 50%;
+}
