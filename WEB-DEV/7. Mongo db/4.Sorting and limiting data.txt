@@ -1,0 +1,12 @@
+// To find the count 
+db.books.find().count()
+
+// To list out only 3 documents
+db.books.find().limit(3)
+
+// To sort the documents 
+// 1 for ascending order
+// -1 for descending order
+db.books.find().sort({title : 1})
+db.books.find().sort({rating : 1})
+db.books.find().sort({rating : -1})

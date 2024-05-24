@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include("./partials/head.ejs") %>
+    <body>
+        <%- include("./partials/nav.ejs") %>
+    <h1 id="heading">Completed Todos</h1>
+    <div class="todos">
+        <%todos.map(todo=>{ %>
+            <div class="todoBlock">
+                <div class="todo">
+                    <h1>
+                        <%= todo.title %>
+                    </h1>
+                    <p>
+                        <%= todo.description %>
+                    </p>
+                </div>
+                <div class="operations">
+                    <button class="delete" data-doc="<%= todo._id  %>">delete</button>               
+                </div>
+            </div>
+            <% }) %>
+    </div>
+
+    <script>
+        async function deleteTodo(endpoint){
+            try{
+               let result = await fetch(endpoint, {
+                   method: "DELETE"
+               });
+               let response = await result.json();
+               window.location.href = response.redirect;
+            }
+            catch(err){
+               console.log(err)
+            }
+          
+       }
+
+       document.querySelectorAll(".delete").forEach(button => {
+           button.addEventListener("click", async (event) => {
+                  deleteTodo(`/todos/completed/${button.dataset.doc}`)       
+           })
+       });
+    </script>
+
+</body>
+</html>

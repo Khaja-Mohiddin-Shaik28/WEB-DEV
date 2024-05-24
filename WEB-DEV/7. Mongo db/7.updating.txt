@@ -1,0 +1,14 @@
+// update one document
+db.books.updateOne({_id: ObjectId('664498ed2332f27398f8d3d9')})
+
+$inc -> increment
+// increments pages by 2
+db.books.updateOne({_id: ObjectId('664498ed2332f27398f8d3d9')},{$inc : {pages : 2}})
+// decrements pages by 2
+db.books.updateOne({_id: ObjectId('664498ed2332f27398f8d3d9')},{$inc : {pages : -2}})
+
+// pushes value
+db.books.updateOne({_id: ObjectId('664498ed2332f27398f8d3d9')}, {$push : {genres : "Dystopian"}})
+
+// pulls value
+db.books.updateOne({_id: ObjectId('664498ed2332f27398f8d3d9')}, {$pull : {genres : "Dystopian"}})

@@ -1,0 +1,22 @@
+// Fetches first 20 documents for next 20 use it command
+db.books.find()
+
+// filter
+db.books.find({rating : 9})
+
+// filter and print necessary properties
+db.books.find({rating : 9},{title: 1, authour: 1})
+
+// print necessary properties
+db.books.find({},{title: 1, authour: 1})
+
+// Find one document by id
+db.books.findOne({_id: ObjectId('66449e9bf31fea596cf192c3')})
+
+// For finding nested documents
+db.books.find({"reviews.name" : "Khaja"})
+
+// To find genres with fantasy and sci-fi
+db.books.find({genres : {$all : ["fantasy", "sci-fi"]}})
+
+

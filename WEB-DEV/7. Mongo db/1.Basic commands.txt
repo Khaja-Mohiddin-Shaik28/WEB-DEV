@@ -1,0 +1,11 @@
+// Basic Commands
+show dbs -> To show databases
+use database -> To move to a particular database
+cls -> To clear Screen
+
+// To refer a collection
+>db
+    bookstore
+>db.books
+    bookstore.books
+

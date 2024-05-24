@@ -1,0 +1,5 @@
+// delete one document
+db.books.deleteOne({_id: ObjectId('66449e9bf31fea596cf192c3')})
+
+// delete many documents
+db.books.deleteMany({rating: 7})

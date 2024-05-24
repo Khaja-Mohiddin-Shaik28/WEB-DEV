@@ -1,0 +1,19 @@
+gt - greater than 
+lt - less than 
+gte - greater than equal to
+lte - less than equal to
+
+ex:
+1. db.books.find({rating : {$gte : 7}})
+2. db.books.find({rating : {$gte : 7}, authour : "Authour4"})
+
+OR
+db.books.find({$or : [{rating : 7, rating : 8}]}) // rating 7 or 8
+db.books.find({$or : [{rating : {$gte : 7}}, {rating : 4}]}) // rating gte 7 or 4
+
+$in #nin
+// if u want to print rating of 7 or 8 or 9 u can use $in
+db.books.find({rating : {$in:[7,8,9]}})
+
+//$nin
+db.books.find({rating : {$nin:[7,8,9]}})

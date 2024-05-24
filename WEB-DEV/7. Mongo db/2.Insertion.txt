@@ -1,0 +1,39 @@
+// To insert one document
+db.books.insertOne({
+  
+  "title": "Book5",
+  "authour": "Authour5",
+  "genre": [
+    "Sci fi",
+    "Thriller",
+    "Mystery"
+  ],
+  "rating": 4
+})
+
+// To insert many documents
+db.books.insertMany([{
+  
+  "title": "Book5",
+  "authour": "Authour5",
+  "genre": [
+    "Sci fi",
+    "Thriller",
+    "Mystery"
+  ],
+  "rating": 4
+},
+{
+  
+  "title": "Book5",
+  "authour": "Authour5",
+  "genre": [
+    "Sci fi",
+    "Thriller",
+    "Mystery"
+  ],
+  "rating": 4
+}
+
+])
+
